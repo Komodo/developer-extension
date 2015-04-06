@@ -1,0 +1,3 @@
+contract @twhiteman.netfirms.com/pyShell;1 {4e5c9764-d465-4fef-ae24-8032f257d174}
+component {4e5c9764-d465-4fef-ae24-8032f257d174} pyShell.py
+interfaces pyIShell.xpt

@@ -1,0 +1,15 @@
+content extensiondev jar:koextensiondev.jar!/content/
+locale extensiondev en-US jar:koextensiondev.jar!/locale/en-US/
+skin extensiondev classic/1.0 jar:koextensiondev.jar!/skin/
+overlay	chrome://browser/content/browser.xul	chrome://extensiondev/content/firefoxOverlay.xul
+overlay	chrome://messenger/content/messenger.xul	chrome://extensiondev/content/thunderbirdOverlay.xul
+overlay chrome://navigator/content/navigatorOverlay.xul chrome://extensiondev/content/seamonkeyOverlay.xul
+overlay chrome://komodo/content/komodo.xul chrome://extensiondev/content/komodoOverlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://extensiondev/skin/extensiondev.css
+
+# Need to specify alternative xpt file - as nsIVairant changed from 1.9.x
+interfaces components/moz2/pyIShell.xpt
+component {4e5c9764-d465-4fef-ae24-8032f257d174} components/pyShell.py
+contract @twhiteman.netfirms.com/pyShell;1 {4e5c9764-d465-4fef-ae24-8032f257d174}
+
+manifest components/component.manifest
